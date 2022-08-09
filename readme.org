@@ -3,8 +3,12 @@
 
 * Miryoku-Fresdevi QMK Development Branch Repository
 
-[[https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/cover/miryoku-kle-cover.png]]
-
-Miryoku-Fresdevi a is an ergonomic, minimal, orthogonal, and universal keyboard layout based on [[https://github.com/manna-harbour/miryoku/][Miryoku]], with added first-class support for French, Spanish, German and Vietnamese.
+Miryoku-Fresdevi a is an ergonomic, minimal and orthogonal layout for the [[https://github.com/raychengy/fifi_split_keeb][Fifi]] keyboard based on [[https://github.com/manna-harbour/miryoku/][Miryoku]], with added first-class support for French, Spanish, German and Vietnamese.
 
 THIS IS A WORK IN PROGRESS, PLEASE USE UPSTREAM Miryoku FOR NOW
+
+Miryoku-Fresdevi is very similar to Miryoku below (but with the base layer inverted for thumb keys, ie. esc, spc and tab are on the left whereas ent, bspc and del are on the right):
+
+[[https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/layers/miryoku-kle-reference-flip-invertedt.png]]
+
+To test, use: `qmk flash -kb crkbd -km manna-harbour_miryoku -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_LAYERS=FLIP -e AVR_CFLAGS="-Wno-array-bounds"`
