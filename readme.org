@@ -1,7 +1,7 @@
 # Copyright 2019 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-* Miryoku-Fresdevi QMK Development Branch Repository
+* Miryoku-Fresdevi
 
 Miryoku-Fresdevi a is an ergonomic, minimal and orthogonal layout for the [[https://github.com/raychengy/fifi_split_keeb][Fifi]] keyboard based on [[https://github.com/manna-harbour/miryoku/][Miryoku]], with added first-class support for French, Spanish, German and Vietnamese.
 
