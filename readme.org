@@ -9,6 +9,6 @@ THIS IS A WORK IN PROGRESS, PLEASE USE UPSTREAM Miryoku FOR NOW
 
 Miryoku-Fresdevi is very similar to Miryoku below (but with the base layer inverted for thumb keys, ie. esc, spc and tab are on the left whereas ent, bspc and del are on the right):
 
-[[https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/layers/miryoku-kle-reference-flip-invertedt.png]]
+[[https://raw.githubusercontent.com/Arkanosis/miryoku-fresdevi/fresdevi/data/layers/miryoku-fresdevi-reference.png]]
 
 To test, use: `qmk flash -kb crkbd -km manna-harbour_miryoku -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_LAYERS=FLIP -e AVR_CFLAGS="-Wno-array-bounds"`
