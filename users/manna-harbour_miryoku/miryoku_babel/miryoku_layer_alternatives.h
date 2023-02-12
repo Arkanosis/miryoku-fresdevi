@@ -344,10 +344,10 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
-RESET,             DF(U_TAP),         DF(U_EXTRA),       DF(U_BASE),        U_NA,              KC_LBRC,           KC_7,              KC_8,              KC_9,              KC_RBRC,           \
-KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_EQL,            KC_4,              KC_5,              KC_6,              KC_SCLN,           \
-U_NA,              KC_ALGR,           DF(U_NAV),         DF(U_NUM),         U_NA,              KC_BSLS,           KC_1,              KC_2,              KC_3,              KC_GRV,            \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_MINS,           KC_0,              KC_DOT,            U_NP,              U_NP
+RESET,             DF(U_TAP),         DF(U_EXTRA),       DF(U_BASE),        U_NA,              KC_LBRC,           KC_KP_7,           KC_KP_8,           KC_KP_9,           KC_RBRC,           \
+KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_EQL,            KC_KP_4,           KC_KP_5,           KC_KP_6,           KC_SCLN,           \
+U_NA,              KC_ALGR,           DF(U_NAV),         DF(U_NUM),         U_NA,              KC_BSLS,           KC_KP_1,           KC_KP_2,           KC_KP_3,           KC_GRV,            \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              KC_MINS,           KC_KP_0,           KC_KP_DOT,         U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NUM \
 KC_LBRC,           KC_7,              KC_8,              KC_9,              KC_RBRC,           U_NA,              DF(U_BASE),        DF(U_EXTRA),       DF(U_TAP),         RESET,             \
@@ -390,22 +390,22 @@ U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_B
 
 
 #define MIRYOKU_ALTERNATIVES_GRAVE \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-ALGR(KC_9),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_2),        ALGR(KC_F16),      U_NA,              \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_F19),      U_NA,              U_NA,              \
+ALGR(KC_9),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_2),        U_NA,              U_NA,              \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_CIRC \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_F18),      U_NA,              U_NA,              \
-ALGR(KC_0),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_3),        ALGR(KC_4),        ALGR(KC_F21),      \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+U_NA,              KC_F19,            KC_F20,            KC_F21,            U_NA,              U_NA,              U_NA,              ALGR(KC_F18),      U_NA,              U_NA,              \
+ALGR(KC_0),        KC_F16,            KC_F17,            KC_F18,            U_NA,              U_NA,              U_NA,              ALGR(KC_3),        ALGR(KC_4),        ALGR(KC_F21),      \
+U_NA,              KC_F13,            KC_F14,            KC_F15,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_CUTE \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_F19),      U_NA,              U_NA,              \
-ALGR(KC_F13),      U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_1),        U_NA,              U_NA,              \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+ALGR(KC_F13),      U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_1),        ALGR(KC_F16),      U_NA,              \
 U_NA,              U_NA,              ALGR(KC_F23),      U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA, \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
