@@ -253,51 +253,51 @@ def list_devices(device_finder):
                 cli.log.info("\t%s:%s\t%s", int2hex(dev.idVendor), int2hex(dev.idProduct), KNOWN_BOOTLOADERS[(int2hex(dev.idVendor), int2hex(dev.idProduct))])
 
 
-@cli.argument('--bootloaders', arg_only=True, default=True, action='store_boolean', help='displaying bootloaders.')
-@cli.argument('-d', '--device', help='Device to select - uses format <pid>:<vid>[:<index>].')
-@cli.argument('-l', '--list', arg_only=True, action='store_true', help='List available hid_listen devices.')
-@cli.argument('-n', '--numeric', arg_only=True, action='store_true', help='Show VID/PID instead of names.')
-@cli.argument('-t', '--timestamp', arg_only=True, action='store_true', help='Print the timestamp for received messages as well.')
-@cli.argument('-w', '--wait', type=int, default=1, help="How many seconds to wait between checks (Default: 1)")
-@cli.subcommand('Acquire debugging information from usb hid devices.', hidden=False if cli.config.user.developer else True)
-def console(cli):
-    """Acquire debugging information from usb hid devices
-    """
-    vid = None
-    pid = None
-    index = 1
+# @cli.argument('--bootloaders', arg_only=True, default=True, action='store_boolean', help='displaying bootloaders.')
+# @cli.argument('-d', '--device', help='Device to select - uses format <pid>:<vid>[:<index>].')
+# @cli.argument('-l', '--list', arg_only=True, action='store_true', help='List available hid_listen devices.')
+# @cli.argument('-n', '--numeric', arg_only=True, action='store_true', help='Show VID/PID instead of names.')
+# @cli.argument('-t', '--timestamp', arg_only=True, action='store_true', help='Print the timestamp for received messages as well.')
+# @cli.argument('-w', '--wait', type=int, default=1, help="How many seconds to wait between checks (Default: 1)")
+# @cli.subcommand('Acquire debugging information from usb hid devices.', hidden=False if cli.config.user.developer else True)
+# def console(cli):
+#     """Acquire debugging information from usb hid devices
+#     """
+#     vid = None
+#     pid = None
+#     index = 1
 
-    if cli.config.console.device:
-        device = cli.config.console.device.split(':')
+#     if cli.config.console.device:
+#         device = cli.config.console.device.split(':')
 
-        if len(device) == 2:
-            vid, pid = device
+#         if len(device) == 2:
+#             vid, pid = device
 
-        elif len(device) == 3:
-            vid, pid, index = device
+#         elif len(device) == 3:
+#             vid, pid, index = device
 
-            if not index.isdigit():
-                cli.log.error('Device index must be a number! Got "%s" instead.', index)
-                exit(1)
+#             if not index.isdigit():
+#                 cli.log.error('Device index must be a number! Got "%s" instead.', index)
+#                 exit(1)
 
-            index = int(index)
+#             index = int(index)
 
-            if index < 1:
-                cli.log.error('Device index must be greater than 0! Got %s', index)
-                exit(1)
+#             if index < 1:
+#                 cli.log.error('Device index must be greater than 0! Got %s', index)
+#                 exit(1)
 
-        else:
-            cli.log.error('Invalid format for device, expected "<pid>:<vid>[:<index>]" but got "%s".', cli.config.console.device)
-            cli.print_help()
-            exit(1)
+#         else:
+#             cli.log.error('Invalid format for device, expected "<pid>:<vid>[:<index>]" but got "%s".', cli.config.console.device)
+#             cli.print_help()
+#             exit(1)
 
-        vid = vid.upper()
-        pid = pid.upper()
+#         vid = vid.upper()
+#         pid = pid.upper()
 
-    device_finder = FindDevices(vid, pid, index, cli.args.numeric)
+#     device_finder = FindDevices(vid, pid, index, cli.args.numeric)
 
-    if cli.args.list:
-        return list_devices(device_finder)
+#     if cli.args.list:
+#         return list_devices(device_finder)
 
-    print('Looking for devices...', flush=True)
-    device_finder.run_forever()
+#     print('Looking for devices...', flush=True)
+#     device_finder.run_forever()
