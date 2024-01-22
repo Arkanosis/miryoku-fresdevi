@@ -24,6 +24,8 @@ MIRYOKU_LAYER_LIST
 #define U_NA KC_NO // present but not available for use
 #define U_NU KC_NO // available but not used
 
+#define MIRYOKU_CLIPBOARD_FUN
+
 #if defined (MIRYOKU_CLIPBOARD_FUN)
   #define U_RDO KC_AGIN
   #define U_PST KC_PSTE
