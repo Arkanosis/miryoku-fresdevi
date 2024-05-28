@@ -406,7 +406,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_CUTE \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 ALGR(KC_F13),      U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_1),        ALGR(KC_F16),      U_NA,              \
-U_NA,              U_NA,              ALGR(KC_F23),      U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA, \
+U_NA,              U_NA,              ALGR(KC_C),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
