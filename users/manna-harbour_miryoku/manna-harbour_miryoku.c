@@ -41,3 +41,28 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(thumbcombos_fun, KC_APP)
 };
 #endif
+
+const key_override_t kp_0_override = ko_make_with_layers_and_negmods(0, KC_KP_0, KC_0, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_1_override = ko_make_with_layers_and_negmods(0, KC_KP_1, KC_1, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_2_override = ko_make_with_layers_and_negmods(0, KC_KP_2, KC_2, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_3_override = ko_make_with_layers_and_negmods(0, KC_KP_3, KC_3, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_4_override = ko_make_with_layers_and_negmods(0, KC_KP_4, KC_4, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_5_override = ko_make_with_layers_and_negmods(0, KC_KP_5, KC_5, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_6_override = ko_make_with_layers_and_negmods(0, KC_KP_6, KC_6, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_7_override = ko_make_with_layers_and_negmods(0, KC_KP_7, KC_7, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_8_override = ko_make_with_layers_and_negmods(0, KC_KP_8, KC_8, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+const key_override_t kp_9_override = ko_make_with_layers_and_negmods(0, KC_KP_9, KC_9, ~0, MOD_MASK_SHIFT | MOD_BIT(KC_RALT));
+
+const key_override_t **key_overrides = (const key_override_t *[]) {
+	&kp_0_override,
+	&kp_1_override,
+	&kp_2_override,
+	&kp_3_override,
+	&kp_4_override,
+	&kp_5_override,
+	&kp_6_override,
+	&kp_7_override,
+	&kp_8_override,
+	&kp_9_override,
+	NULL
+};
