@@ -1,14 +1,22 @@
 # Copyright 2019 Manna Harbour
-# https://github.com/manna-harbour/miryoku
+# Copyright 2022-2025 Arkanosis
+# https://github.com/Arkanosis/miryoku-fresdevi
 
 * Miryoku-Fresdevi
 
-Miryoku-Fresdevi a is an ergonomic, minimal and orthogonal layout for the [[https://github.com/raychengy/fifi_split_keeb][Fifi]] keyboard based on [[https://github.com/manna-harbour/miryoku/][Miryoku]], with added first-class support for French, Spanish, German and Vietnamese.
+Miryoku-Fresdevi a is an ergonomic, minimal and orthogonal layout for the [[https://github.com/raychengy/fifi_split_keeb][Fifi]] keyboard based on [[https://github.com/manna-harbour/miryoku/][Miryoku]], with added first-class support for French, Spanish, German and Vietnamese, as well as many Unicode characters.
 
-THIS IS A WORK IN PROGRESS, PLEASE USE UPSTREAM Miryoku FOR NOW
+THIS IS A WORK IN PROGRESS, PLEASE USE UPSTREAM Miryoku FOR NOW (stability is not a goal for Fresdevi, yet)
 
-Miryoku-Fresdevi is very similar to Miryoku below (but with the base layer inverted for thumb keys, ie. esc, spc and tab are on the left whereas ent, bspc and del are on the right):
+Miryoku-Fresdevi is mostly a superset of Miryoku (but with the base layer inverted for thumb keys, ie. esc, spc and tab are on the left whereas ent, bspc and del are on the right):
 
 [[https://raw.githubusercontent.com/Arkanosis/miryoku-fresdevi/fresdevi/data/layers/miryoku-fresdevi-reference.png]]
 
 To test, use: `qmk flash -kb crkbd -km manna-harbour_miryoku -e MIRYOKU_NAV=INVERTEDT -e MIRYOKU_LAYERS=FLIP -e AVR_CFLAGS="-Wno-array-bounds"`
+
+Unlike Miryoku, Miryoku-Fresdevi currently depends on software in userland (ie. the QMK firmware of this repo alone is not enough):
+ - on Linux/Xorg, [[https://gitlab.freedesktop.org/xorg/app/xmodmap][xmodmap]] is used ([[https://github.com/Arkanosis/Arkonf/blob/master/xorg/.Xmodmap][example configuration]]);
+ - on Windows, [[https://www.microsoft.com/en-us/download/details.aspx?id=102134][MSKLC]] and [[https://github.com/jtroo/kanata][Kanata]] are used ([[https://github.com/Arkanosis/Arkonf/blob/master/kanata/kanata.kbd][example configuration]]);
+ - Linux/Wayland is not supported, yet.
+
+The software part of Miryoku-Fresdevi is unlikely to go away any time soon, as handling Unicode with firmware only is mostly impossible, at least when trying to support both Linux and Windows transparently. The goal, however, is to make the software part as small and portable as possible, so it's likely that xmodmap and MSKLC will stop being used, with Kanata (or something else) possibly becoming the common software component for both Linux/Xorg, Linux/Wayland and Windows.
