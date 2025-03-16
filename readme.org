@@ -20,3 +20,7 @@ Unlike Miryoku, Miryoku-Fresdevi currently depends on software in userland (ie. 
  - Linux/Wayland is not supported, yet.
 
 The software part of Miryoku-Fresdevi is unlikely to go away any time soon, as handling Unicode with firmware only is mostly impossible, at least when trying to support both Linux and Windows transparently. The goal, however, is to make the software part as small and portable as possible, so it's likely that xmodmap and MSKLC will stop being used, with Kanata (or something else) possibly becoming the common software component for both Linux/Xorg, Linux/Wayland and Windows.
+
+** Layers and locks
+
+[[https://raw.githubusercontent.com/Arkanosis/miryoku-fresdevi/fresdevi/data/layers/miryoku-fresdevi-spreadsheet-lock.png]]
