@@ -391,7 +391,7 @@ U_NP,              U_NP,              KC_BTN3,           KC_BTN1,           KC_B
 
 #define MIRYOKU_ALTERNATIVES_GRAVE \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_F19),      U_NA,              U_NA,              \
-ALGR(KC_9),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_2),        U_NA,              U_NA,              \
+ALGR(KC_9),        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              ALGR(KC_2),        U_NA,              ALGR(KC_F23),      \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
